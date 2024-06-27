@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Login from '../views/Login.vue'
+import OrdersList from '../views/OrdersList.vue'
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     name: 'Login',
     component: Login
   },
+  {
+    path: '/ordersList',
+    name: 'OrdersList',
+    component: OrdersList
+  },
 ]
 
 const router = createRouter({
@@ -20,3 +26,4 @@ const router = createRouter({
 })
 
 export default router
+
